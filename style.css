@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Fontes^^ */
+    --fonte-parallax: "Moulpali", sans-serif;
+    --fonte-titulo: "Satisfy", sans-serif;
+    --fonte-normal: "Montserrat", sans-serif;
+    /* Cor das Fontes^^ */
+    --fonte-cor: #675a5e;
+    /* Paleta^^ */
+    --Pink5: #ffc1d7;
+}
+
+body{
+    background-color: var(--Body);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    width: 100%;
+}
+
+#cabecalho-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cabecalho {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    font-family: var(--fonte-parallax);
+    position: absolute;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00000080;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2c2c2ccc;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+    font-size: 190px;
+    font-family: var(--fonte-parallax);
+    text-align: center;
+    color: #ebebeb;
+}
+
+#img1{
+    background-image: url(img/oi.png);
+}
+
+#centro{
+    margin-left: 340px;
+}
+
+#centroo{
+    width: 100%;
+}
+
+.centralizador {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    color: var(--fonte-cor);
+    font-size: 20px;
+}
+
+video{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 40px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+mark{
+    color: var(--fonte-cor);
+    background-color: var(--Pink5);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    padding-bottom: 40px;
+    font-family: var(--fonte-parallax);
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Contato^^ */
+.centralizadorcontato {
+    border-radius: 0px;
+    background-color: #ffdee3;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    color: var(--fonte-cor);
+    font-size: 20px;
+}
+
+.questionario{
+    background-color: #ffdee3;
+    font-size: larger;
+    font-family: var(--fonte-parallax);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+fieldset{
+    border: none;
+}
+
+form h1{
+    color: var(--fonte-cor);
+}
+
+form fieldset{
+    border: none;
+    margin-bottom: 15px;
+}
+
+form legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--fonte-cor);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--fonte-cor);
+}
+
+input[type="text"],
+select{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4x;
+    border: 1px solid var(--fonte-cor);
+}
+
+input[type="email"],
+select{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4x;
+    border: 1px solid var(--fonte-cor);
+}
+
+#msg{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4x;
+    border: 1px solid var(--fonte-cor);
+}
+
+button{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+}
+
+button:hover{
+    background-color: #2c2c2ccc;
+    transition: 0.5s;
+}
+
+/* Quiz */
+.centralizadorquiz {
+    border-radius: 0px;
+    background-color: #ffdee3;
+    max-width: 900px;
+    margin: auto;
+    color: var(--fonte-cor);
+    font-size: 20px;
+}
+
+.quiz-section {
+    padding: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 2px;
+    font-size: 1.09em;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+    margin: -20px -20px 0px -20.5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 30px 0px 30px 10px;
+    text-align: center;
+}
+
+#h3man {
+    font-family: var(--fonte-normal);
+}
+
+.question{
+    font-family: var(--fonte-titulo);
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 1.09em;
+    border-radius: 5px;
+}
+
+button{
+    font-family: var(--fonte-parallax);
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+}
+
+button:hover{
+    background-color: #2c2c2ccc;
+    transition: 0.5s;
+}
+
+#resetBtn{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: #000000;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+}
+
+#resetBtn:hover{
+    background-color: #2c2c2ccc;
+}
+
+button:disabled{
+    background-color: #643c47a4;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#resetBtn:disabled{
+    background-color: #643c47a4;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#result{
+    font-size: 15px;
+    text-align: center;
+}
+
+audio{
+    height: 0px;
+}
